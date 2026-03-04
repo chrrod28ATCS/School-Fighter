@@ -1,0 +1,37 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Users\chrod\Downloads\Greenfoot-windows-390\Greenfoot\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-protected
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+21
+-classpath
+C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\greenfoot.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx-base-21.0.3-win.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx-controls-21.0.3-win.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx-fxml-21.0.3-win.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx-graphics-21.0.3-win.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx-media-21.0.3-win.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx-swing-21.0.3-win.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx-web-21.0.3-win.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\junit-4.12.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\junit-jupiter-5.5.2.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\junit-jupiter-api-5.5.2.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\junit-jupiter-engine-5.5.2.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\junit-jupiter-params-5.5.2.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\junit-platform-commons-1.5.2.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\junit-platform-engine-1.5.2.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\junit-platform-launcher-1.5.2.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\junit-platform-suite-api-1.5.2.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\junit-vintage-engine-5.5.2.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\hamcrest-core-1.3.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\opentest4j-1.2.0.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\bluej.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\classgraph-4.8.90.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\diffutils-1.2.1.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\commons-logging-1.2.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\jl1.0.1.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\opencsv-2.3.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\opencsv-2.4.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\xom-1.3.9.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\lang-stride.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\nsmenufx-3.1.0.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\wellbehavedfx-0.3.3.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\guava-33.3.1-jre.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\failureaccess-1.0.2.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\simple-png-0.2.0.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\simple-png-javafx-0.2.0.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\httpclient-4.5.13.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\httpcore-4.4.13.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\httpmime-4.1.1.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx\javafx.base.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx\javafx.controls.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx\javafx.fxml.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx\javafx.graphics.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx\javafx.media.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx\javafx.properties.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx\javafx.swing.jar;C:\Users\chrod\Downloads\Greenfoot-windows-390\greenfoot\lib\javafx\javafx.web.jar;C:\Users\chrod\OneDrive\Desktop\2025-26\Applied\MidyearProject\School Fighter
+-d
+C:\Users\chrod\OneDrive\Desktop\2025-26\Applied\MidyearProject\School Fighter\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+C:\Users\chrod\OneDrive\Desktop\2025-26\Applied\MidyearProject\School Fighter\MyWorld.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\chrod\OneDrive\Desktop\2025-26\Applied\MidyearProject\School Fighter\MyWorld.java...
+Constructing Javadoc information...
+warning: unknown enum constant Tag.Any
+  reason: class file for threadchecker.Tag not found
+warning: unknown enum constant Tag.Any
+warning: unknown enum constant Tag.Any
+warning: unknown enum constant Tag.Any
+Standard Doclet version 21.0.4+7-LTS
+Building tree for all the packages and classes...
+Generating C:\Users\chrod\OneDrive\Desktop\2025-26\Applied\MidyearProject\School Fighter\doc\MyWorld.html...
+Generating C:\Users\chrod\OneDrive\Desktop\2025-26\Applied\MidyearProject\School Fighter\doc\package-summary.html...
+Generating C:\Users\chrod\OneDrive\Desktop\2025-26\Applied\MidyearProject\School Fighter\doc\index.html...
+4 warnings

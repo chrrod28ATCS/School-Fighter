@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CharSelect
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CharSelect\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=CharSelect()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CharSelect.\r\n\ \r\n
+comment2.params=color
+comment2.target=void\ characterChosen(java.lang.String)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ stopped()
+numComments=5
