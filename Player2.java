@@ -13,14 +13,14 @@ public class Player2 extends Actor
     private GreenfootImage kickImageLeft;
     private GreenfootImage kickImageRight;
     
-    private GreenfootImage[] moveFrames;
+    private GreenfootImage[] moveFramesRight, moveFramesLeft;
     private int frameIndex = 0;
     private int frameTimer = 0;
 
-    private boolean moving = false;
-    private int animationSpeed = 8;
-    
     private boolean facingRight = false;
+    private boolean moving = false;
+    
+    private int animationSpeed = 8;
 
     private int punchTimer = 0;
     private int lingerTimer = 0;
@@ -34,22 +34,29 @@ public class Player2 extends Actor
     boolean punching = false;
 
     public Player2(String color) {
-        punchImageLeft = new GreenfootImage(color + "PunchLeft.png");
         punchImageRight = new GreenfootImage(color + "Punch.png");
-        kickImageLeft = new GreenfootImage(color + "KickLeft.png");
-        kickImageRight = new GreenfootImage(color + "Kick.png");
+        punchImageLeft = new GreenfootImage(punchImageRight);
+        punchImageLeft.mirrorHorizontally();
         
-        moveFrames = new GreenfootImage[4];
+        kickImageRight = new GreenfootImage(color + "Kick.png");
+        kickImageLeft = new GreenfootImage(kickImageRight);
+        kickImageLeft.mirrorHorizontally();
+        
+        // Load right movement frames 
+        moveFramesRight = new GreenfootImage[4];
+        moveFramesRight[0] = new GreenfootImage(color + "Move1.png");
+        moveFramesRight[1] = new GreenfootImage(color + "Stand.png");
+        moveFramesRight[2] = new GreenfootImage(color + "Move2.png");
+        moveFramesRight[3] = new GreenfootImage(color + "Stand.png");
+        
+        // Create left versions
+        moveFramesLeft = new GreenfootImage[4];
+        for (int i = 0; i < moveFramesRight.length; i++) {
+            moveFramesLeft[i] = new GreenfootImage(moveFramesRight[i]);
+            moveFramesLeft[i].mirrorHorizontally();
+        }
 
-        moveFrames[0] = new GreenfootImage(color + "Move1.png");
-        moveFrames[1] = new GreenfootImage(color + "Stand.png");
-        moveFrames[2] = new GreenfootImage(color + "Move2.png");
-        moveFrames[3] = new GreenfootImage(color + "Stand.png");
-
-        facingRight = false;
-        GreenfootImage img = new GreenfootImage(moveFrames[1]);
-        img.mirrorHorizontally();
-        setImage(img);
+        setImage(moveFramesRight[1]);
     }
     
     /**
@@ -58,9 +65,8 @@ public class Player2 extends Actor
      */
     public void act() {
         MyWorld world = (MyWorld)getWorld();
-        if (!world.fightStarted()) {
-            return;
-        }
+        if (!world.fightStarted()) return;
+        
         
         checkP1Death();
         
@@ -87,13 +93,11 @@ public class Player2 extends Actor
         if (Greenfoot.isKeyDown("left") && !Greenfoot.isKeyDown("right")) {
             setLocation(getX() - speed, getY());
             moving = true;
-            
             facingRight = false;
         }
         if (Greenfoot.isKeyDown("right") && !Greenfoot.isKeyDown("left")) {
             setLocation(getX() + speed, getY());
             moving = true;
-            
             facingRight = true;
         }
     }
@@ -107,27 +111,23 @@ public class Player2 extends Actor
             punching = true;
             Greenfoot.playSound("punch.mp3");
             
-            if (!facingRight) {
-                setImage(punchImageLeft);
-            } else {
-                setImage(punchImageRight);
-            }
+            setImage(facingRight ? punchImageRight : punchImageLeft);
             
             punchTimer = 10; // how long the punch lasts (frames)
             lingerTimer = 12;
+            
+            //checkHit();
         }
         if (Greenfoot.isKeyDown("down") && !punching) {
             punching = true;
             Greenfoot.playSound("punch.mp3");
             
-            if (!facingRight) {
-                setImage(kickImageLeft);
-            } else {
-                setImage(kickImageRight);
-            }
+            setImage(facingRight ? kickImageRight : kickImageLeft);
             
             punchTimer = 10;
             lingerTimer = 12;
+            
+            checkHit();
         }
     }
 
@@ -147,9 +147,8 @@ public class Player2 extends Actor
             lingerTimer--;
         } else {
             punching = false;
-            GreenfootImage img = new GreenfootImage(moveFrames[1]);
-            if (!facingRight) img.mirrorHorizontally();
-            setImage(img);
+            
+            setImage(facingRight ? moveFramesRight[1] : moveFramesLeft[1]);
         }
     }
     
@@ -174,12 +173,12 @@ public class Player2 extends Actor
     
     private void checkP1Death() {
         Player1 other = (Player1)getOneIntersectingObject(Player1.class);
-        if (isTouching(Player1.class) && isPunching() && other.hitPoints() <= 0) {
+        if (other != null && isPunching() && other.hitPoints() <= 0) {
             removeTouching(Player1.class);
             
             GreenfootImage img = new GreenfootImage("Player2Wins.png");
             GreenfootImage bg = getWorld().getBackground();
-            bg.drawImage(img, (800/2)-img.getWidth()/2, 600/2-img.getHeight()/2);
+            bg.drawImage(img, 400 - img.getWidth()/2, 300 - img.getHeight()/2);
             
             Greenfoot.playSound("Kill.mp3");
             Greenfoot.playSound("fanfare.wav");
@@ -192,20 +191,16 @@ public class Player2 extends Actor
             frameTimer--;
 
             if (frameTimer <= 0) {
-                frameIndex = (frameIndex + 1) % moveFrames.length;
-                GreenfootImage img = new GreenfootImage(moveFrames[frameIndex]);
-                if (!facingRight) {
-                    img.mirrorHorizontally();
+                frameIndex = (frameIndex + 1) % moveFramesRight.length;
+                if (facingRight) {
+                    setImage(moveFramesRight[frameIndex]);
+                } else {
+                    setImage(moveFramesLeft[frameIndex]);
                 }
-                setImage(img);
                 frameTimer = animationSpeed;
             }
         } else {
-            GreenfootImage img = new GreenfootImage(moveFrames[1]);
-            if (!facingRight) {
-                img.mirrorHorizontally();
-            }
-            setImage(img);
+            setImage(facingRight ? moveFramesRight[1] : moveFramesLeft[1]);
         }
     }
     

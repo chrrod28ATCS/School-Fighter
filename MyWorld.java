@@ -9,11 +9,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World {
     Player1 p1;
     Player2 p2;
+    Intro intro;
     
     private int timer = 240;
     public boolean fightStarted = false;
     
     private GreenfootSound music = new GreenfootSound("Fight.mp3");
+    private GreenfootSound count = new GreenfootSound("3 2 1.mp3");
     
     /**
      * Constructor for objects of class MyWorld.
@@ -37,8 +39,13 @@ public class MyWorld extends World {
         
         addObject(new Floor(), 800/2, 562);
         
-        addObject(new Intro(), 800/2, 600/2);
-        Greenfoot.playSound("3 2 1.mp3");
+        showText("Player 1", 200, 20);
+        showText("Player 2", 600, 20);
+        
+        intro = new Intro();
+        
+        addObject(intro, 400, 300);
+        count.play();
     }
     
     public void act() {
@@ -47,7 +54,6 @@ public class MyWorld extends World {
             
             showText("WAD to control", 200, 350);
             showText("F to punch, S to kick", 200, 375);
-            
             showText("Arrows to control", 600, 350);
             showText("/ to punch, down to kick", 600, 375);
             if (timer <= 60) {
@@ -58,12 +64,11 @@ public class MyWorld extends World {
             }
             if (timer <= 0) {
                 fightStarted = true;
-                removeObjects(getObjects(Intro.class));
+                removeObject(intro);
                 music.playLoop();
             }
         }
-        showText("Player 1", 200, 20);
-        showText("Player 2", 600, 20);
+        
     }
     
     public boolean fightStarted() {
