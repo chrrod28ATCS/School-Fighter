@@ -6,9 +6,6 @@ VERSION or DATE:
   1.2.1 (May 11, 2026)
   - Added match timer (60 seconds), players draw if time runs out
 
-  1.2.0 (May 6, 2026)
-  - Edited player sprite animation and MyWorld text generation to improve performance
-
 VERSION HISTORY: 
   1.0.0 (17 February 2026)
   - Game on day of 2/17/2026 Midyear Presentation
@@ -22,6 +19,9 @@ VERSION HISTORY:
   - Mirrored punching sprite
   - Edited sprite and movement logic to fix bug where after attacking, the player’s standing sprite mirrors and then immediately goes back to normal
   - Edited control message during fight intro to show kicking as an option
+
+  1.2.0 (May 6, 2026)
+  - Edited player sprite animation and MyWorld text generation to improve performance
 
 HOW TO START THIS PROJECT: Download the folder and open it in Greenfoot
 
