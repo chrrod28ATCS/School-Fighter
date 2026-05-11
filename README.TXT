@@ -3,6 +3,9 @@ PROJECT TITLE: School Fighter
 PURPOSE OF PROJECT: Applied Comp Sci (2025-2026) Midyear and Endyear Project
 
 VERSION or DATE: 
+  1.2.1 (May 11, 2026)
+  - Added match timer (60 seconds), players draw if time runs out
+
   1.2.0 (May 6, 2026)
   - Edited player sprite animation and MyWorld text generation to improve performance
 
