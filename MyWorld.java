@@ -12,7 +12,10 @@ public class MyWorld extends World {
     Intro intro;
     
     private int timer = 240;
+    private int matchTimer = 3600;
+    
     public boolean fightStarted = false;
+    private boolean timeUp = false;
     
     private GreenfootSound music = new GreenfootSound("Fight.mp3");
     private GreenfootSound count = new GreenfootSound("3 2 1.mp3");
@@ -67,8 +70,20 @@ public class MyWorld extends World {
                 removeObject(intro);
                 music.playLoop();
             }
+        } else if (!timeUp) {
+            matchTimer--;
+            int seconds = matchTimer/60;
+            showText("" + seconds, 400, 40);
+            
+            if (matchTimer <= 0) {
+                timeUp = true;
+                GreenfootImage img = new GreenfootImage("Draw.png");
+                getBackground().drawImage(img, 400 - img.getWidth()/2, 300 - img.getHeight()/2);
+                Greenfoot.playSound("Kill.mp3");
+                Greenfoot.playSound("fanfare.wav");
+                Greenfoot.stop();
+            }
         }
-        
     }
     
     public boolean fightStarted() {
