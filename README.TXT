@@ -3,6 +3,16 @@ PROJECT TITLE: School Fighter
 PURPOSE OF PROJECT: Applied Comp Sci (2025-2026) Midyear and Endyear Project
 
 VERSION or DATE: 
+  1.3.0 (IN DEVELOPMENT)
+  - Created score system, 100 points per attack
+  - Created new pixel art backgrounds
+    - City skyline (COMPLETE)
+    - Beach
+    - Mountains (IN PROGRESS)
+    - Jungle
+    - Grassy plain
+    - Desert
+
   1.2.1 (May 11, 2026)
   - Added match timer (60 seconds), players draw if time runs out
 
