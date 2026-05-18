@@ -5,6 +5,7 @@ PURPOSE OF PROJECT: Applied Comp Sci (2025-2026) Midyear and Endyear Project
 VERSION or DATE: 
   1.3.0 (IN DEVELOPMENT)
   - Created score system, 100 points per attack
+  - Created escape key pause menu (IN PROGRESS)
   - Created new pixel art backgrounds
     - City skyline (COMPLETE)
     - Beach
