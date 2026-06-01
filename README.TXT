@@ -3,16 +3,20 @@ PROJECT TITLE: School Fighter
 PURPOSE OF PROJECT: Applied Comp Sci (2025-2026) Midyear and Endyear Project
 
 VERSION or DATE: 
-  1.3.0 (IN DEVELOPMENT)
-  - Created score system, 100 points per attack
-  - Created escape key pause menu (IN PROGRESS)
+  1.3.0 (IN DEVELOPMENT) (deadline: June 10, 2026)
+  - Rehauled character selection system to include 3 individual characters (IN PROGRESS)
+    - Sprinter (fastest) [IN PROGRESS / SELECT SPRITE DONE]
+    - Fighter (deals most damage) [IN PROGRESS / SELECT SPRITE DONE]
+    - Jumper (jumps highest) [IN PROGRESS / SELECT SPRITE IN PRORGESS]
+  - Created score system, 100 points per attack (COMPLETE)
+  - Created escape key pause menu (COMPLETE)
   - Created new pixel art backgrounds
     - City skyline (COMPLETE)
-    - Beach
-    - Mountains (IN PROGRESS)
-    - Jungle
-    - Grassy plain
-    - Desert
+    - Beach (COMPLETE)
+    - Mountains (COMPLETE)
+    - Jungle 
+    - Grassy plain (COMPLETE)
+    - Desert (COMPLETE)
 
   1.2.1 (May 11, 2026)
   - Added match timer (60 seconds), players draw if time runs out
@@ -23,7 +27,7 @@ VERSION HISTORY:
 
   1.1.0 (19 February 2026)
   - Added kicking as a new method of attacking
-  - Player1 presses “S” key, Player2 presses down arrow key
+    - Player1 presses “S” key, Player2 presses down arrow key
   - Created new sprites for all character colors
   - Kicking sprite
   - Mirrored kicking sprite
