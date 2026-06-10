@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Victory
+comment1.params=victorNum\ loserNum\ bestOf3\ imgName\ p1Score\ p2Score
+comment1.target=Victory(int,\ int,\ boolean,\ java.lang.String,\ int,\ int)
+numComments=2

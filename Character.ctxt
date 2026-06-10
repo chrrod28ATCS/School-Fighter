@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Character
+comment1.params=name\ color\ speed\ damage\ jumpPower
+comment1.target=Character(java.lang.String,\ java.lang.String,\ int,\ int,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=java.lang.String\ getColor()
+comment4.params=
+comment4.target=int\ getSpeed()
+comment5.params=
+comment5.target=int\ getDamage()
+comment6.params=
+comment6.target=int\ getJumpPower()
+numComments=7

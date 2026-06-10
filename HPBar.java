@@ -1,13 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class HPBar here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class HPBar extends Actor
-{
+public class HPBar extends Actor {
     private Actor player;
     
     public HPBar(Actor p) {
@@ -15,10 +8,6 @@ public class HPBar extends Actor
         updateBar();
     }
     
-    /**
-     * Act - do whatever the HPBar wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act() {
         updateBar();
     }

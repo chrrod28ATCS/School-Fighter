@@ -1,15 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class TitleButton here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class TitleButton extends Actor
-{
+public class TitleButton extends Actor {
     private String buttonType;
     private TitleScreen titleScreen;
+    private ModeSelect modeSelect;
     
     public TitleButton(String type) {
         this.buttonType = type;
@@ -27,22 +21,43 @@ public class TitleButton extends Actor
         if (buttonType.equals("Credits")) {
             setImage("Credits.png");
         }
+        if (buttonType.equals("HowToPlay")) {
+            setImage("HowToPlay.png");
+        }
+        if (buttonType.equals("Normal")) {
+            setImage("Normal.png");
+        }
+        if (buttonType.equals("2OutOf3Falls")) {
+            setImage("2OutOf3Falls.png");
+        }
     }
     
-    /**
-     * Act - do whatever the TitleButton wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
-    {
-        if (Greenfoot.mouseClicked(this)) {
+    public void act() {
+        // TitleScreen buttons
+        if (Greenfoot.mouseClicked(this) && getWorld() instanceof TitleScreen) {
             titleScreen = (TitleScreen)getWorld();
             titleScreen.stopped();
             if (buttonType.equals("Play")) { 
-                Greenfoot.setWorld(new CharSelect());
+                Greenfoot.setWorld(new ModeSelect());
             }
             if (buttonType.equals("Credits")) {
                 Greenfoot.setWorld(new Credits());
+            }
+            if (buttonType.equals("HowToPlay")) {
+
+                Greenfoot.setWorld(new HowToPlay());
+            }
+        }
+        
+        // ModeSelect buttons
+        if (Greenfoot.mouseClicked(this) && getWorld() instanceof ModeSelect) {
+            modeSelect = (ModeSelect)getWorld();
+            modeSelect.stopped();
+            if (buttonType.equals("Normal")) { 
+                Greenfoot.setWorld(new CharSelect(false));
+            }
+            if (buttonType.equals("2OutOf3Falls")) {
+                Greenfoot.setWorld(new CharSelect(true));
             }
         }
     }

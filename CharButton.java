@@ -1,30 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class CharButton here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class CharButton extends Actor
-{
-    public String color;
+public class CharButton extends Actor {
+    public Character character;
     
-    public CharButton(String color) {
-        this.color = color;
+    public CharButton(Character character) {
+        this.character = character;
         
-        setImage("Select" + color + ".png");
+        GreenfootImage image = new GreenfootImage("Select" + character.getName() + ".png");
+        image.scale(200, 200);
+        setImage(image);
     }
     
-    /**
-     * Act - do whatever the CharButton wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
-    {
+    public void act() {
         if (Greenfoot.mouseClicked(this)) {
             CharSelect world = (CharSelect)getWorld(); 
-            world.characterChosen(color);
+            world.characterChosen(character);
         }
     }
 }
