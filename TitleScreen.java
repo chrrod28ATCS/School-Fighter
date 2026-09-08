@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class TitleScreen extends World {
     private GitHubLink ghl;
-    private GreenfootSound music = new GreenfootSound("TitleScreen.mp3");
+    private GreenfootSound music = new GreenfootSound("TitleScreen.wav");
     
     public TitleScreen() {    
         super(800, 600, 1); 

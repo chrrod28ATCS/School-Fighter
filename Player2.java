@@ -103,7 +103,7 @@ public class Player2 extends Actor {
         if (Greenfoot.isKeyDown("/") && !punching) {
             punching = true;
             punchConnected = false;
-            Greenfoot.playSound("punch.mp3");
+            Greenfoot.playSound("punch.wav");
             
             setImage(facingRight ? punchImageRight : punchImageLeft);
             
@@ -113,7 +113,7 @@ public class Player2 extends Actor {
         if (Greenfoot.isKeyDown("down") && !punching) {
             punching = true;
             punchConnected = false;
-            Greenfoot.playSound("punch.mp3");
+            Greenfoot.playSound("punch.wav");
             
             setImage(facingRight ? kickImageRight : kickImageLeft);
             
@@ -185,7 +185,7 @@ public class Player2 extends Actor {
             moving = true;
             vSpeed = jumpPower;
             onGround = false;
-            Greenfoot.playSound("jump.mp3");
+            Greenfoot.playSound("jump.wav");
         }
     }
     

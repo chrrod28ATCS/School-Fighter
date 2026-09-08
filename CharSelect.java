@@ -10,8 +10,8 @@ public class CharSelect extends World {
     
     private int startTimer = -1;
     
-    private GreenfootSound music1 = new GreenfootSound("CharSelect.mp3");
-    private GreenfootSound music2 = new GreenfootSound("2OutOf3Falls-CharSelect.mp3");
+    private GreenfootSound music1 = new GreenfootSound("CharSelect.wav");
+    private GreenfootSound music2 = new GreenfootSound("2OutOf3Falls-CharSelect.wav");
     
     public CharSelect(boolean bestOf3) {
         super(800, 600, 1); 
@@ -29,7 +29,7 @@ public class CharSelect extends World {
         addObject(new CharButton(Sprinter), 400, 300);
         addObject(new CharButton(Jumper), 600, 300);
         
-        Greenfoot.playSound("Choose.mp3");
+        Greenfoot.playSound("Choose.wav");
         
         if (bestOf3) {
             music2.playLoop();

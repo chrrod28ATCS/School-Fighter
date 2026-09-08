@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class LeaderboardScreen extends World {
-    private GreenfootSound music = new GreenfootSound("Leaderboard.mp3");
+    private GreenfootSound music = new GreenfootSound("Leaderboard.wav");
     
     public LeaderboardScreen() {    
         super(800, 600, 1); 

@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class ModeSelect extends World {
-    private GreenfootSound music = new GreenfootSound("ModeSelect.mp3");
+    private GreenfootSound music = new GreenfootSound("ModeSelect.wav");
     
     public ModeSelect() {    
         super(800, 600, 1); 
