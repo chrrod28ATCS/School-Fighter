@@ -5,7 +5,6 @@ PURPOSE OF PROJECT: Applied Comp Sci (2025-2026) Midyear and YearEnd Project
 VERSION and DATE: 
   1.3.1 (IN DEVELOPMENT) (September 2026)
   - Removed all unused elements
-  - Converted all audio from .mp3 to .wav
 
   1.3.0 (11 June 2026)
   - Added How to Play menu with controls and guidance, accessible via TitleScreen
