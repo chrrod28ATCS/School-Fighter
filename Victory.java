@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Victory extends World {
-    private GreenfootSound music = new GreenfootSound("2OutOf3Falls-Results.wav");
+    private GreenfootSound music = new GreenfootSound("2OutOf3Falls-Results.mp3");
 
     public Victory(int victorNum, int loserNum, boolean bestOf3, String imgName, int p1Score, int p2Score) {    
         super(800, 600, 1);

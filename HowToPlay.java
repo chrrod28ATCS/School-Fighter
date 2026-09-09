@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class HowToPlay extends World {
-    private GreenfootSound music = new GreenfootSound("HowToPlay.wav");
+    private GreenfootSound music = new GreenfootSound("HowToPlay.mp3");
     
     public HowToPlay() {    
         super(800, 600, 1); 

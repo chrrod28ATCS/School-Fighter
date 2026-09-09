@@ -25,9 +25,9 @@ public class MyWorld extends World {
     private int p1Score;
     private int p2Score;
     
-    private GreenfootSound music1 = new GreenfootSound("Fight.wav");
-    private GreenfootSound music2 = new GreenfootSound("2OutOf3Falls-FinalRound.wav");
-    private GreenfootSound count = new GreenfootSound("3 2 1.wav");
+    private GreenfootSound music1 = new GreenfootSound("Fight.mp3");
+    private GreenfootSound music2 = new GreenfootSound("2OutOf3Falls-FinalRound.mp3");
+    private GreenfootSound count = new GreenfootSound("3 2 1.mp3");
     
     public MyWorld(Character p1Character, Character p2Character, boolean bestOf3, 
         int p1Falls, int p2Falls, int p1Score, int p2Score) {    
@@ -109,7 +109,7 @@ public class MyWorld extends World {
                 timeUp = true;
                 GreenfootImage img = new GreenfootImage("Draw.png");
                 getBackground().drawImage(img, 400 - img.getWidth()/2, 300 - img.getHeight()/2);
-                Greenfoot.playSound("Kill.wav");
+                Greenfoot.playSound("Kill.mp3");
                 if (!bestOf3) {
                     Greenfoot.stop();
                 } else {
@@ -130,7 +130,7 @@ public class MyWorld extends World {
                 } else {
                     removeObject(pauseSprite);
                 }
-                Greenfoot.playSound("SMBPause.wav");
+                Greenfoot.playSound("SMBPause.mp3");
             }
         } else {
             escHeld = false;
@@ -144,7 +144,7 @@ public class MyWorld extends World {
     private void showWinner(String imgName) {
         GreenfootImage img = new GreenfootImage(imgName);
         addObject(new VictoryMessage(imgName), 400, 300);
-        Greenfoot.playSound("Kill.wav");
+        Greenfoot.playSound("Kill.mp3");
         Greenfoot.playSound("fanfare.wav");
         stopped();
     }

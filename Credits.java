@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Credits extends World {
-    private GreenfootSound music = new GreenfootSound("Credits.wav");
+    private GreenfootSound music = new GreenfootSound("Credits.mp3");
     
     public Credits() {    
         super(800, 600, 1); 
