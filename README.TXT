@@ -6,6 +6,7 @@ VERSION and DATE:
   1.3.0.1 (IN DEVELOPMENT) (September 2026)
   - Removed all unused elements
   - Made small changes to text on TitleScreen to reflect current version
+  - Made small edits to text in Credits
 
   1.3.0 (11 June 2026)
   - Added How to Play menu with controls and guidance, accessible via TitleScreen
