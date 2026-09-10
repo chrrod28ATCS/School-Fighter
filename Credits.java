@@ -20,8 +20,8 @@ public class Credits extends World {
         showText("Ayush Kar", 400, 400);
         showText("Thomas 'Big Tommy' Torossian", 400, 425);
         showText("ChatGPT", 400, 450);
-        showText("The Spriters Resource (spriters-resource.com)",400, 450);
-        showText("Greenfoot.org Forums", 400, 475);
+        showText("The Spriters Resource (spriters-resource.com)", 400, 450);
+        showText("Greenfoot.org Discussions", 400, 475);
         
         addObject(new LeaderboardLink(), 400, 525);
         addObject(new YouTubeLink(), 400, 550);
