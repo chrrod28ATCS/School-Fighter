@@ -1,8 +1,11 @@
-PROJECT TITLE: School Fighter v1.3.0
+PROJECT TITLE: School Fighter
 
 PURPOSE OF PROJECT: Applied Comp Sci (2025-2026) Midyear and YearEnd Project
 
 VERSION and DATE: 
+  1.3.1 (IN DEVELOPMENT) (September 2026)
+  - Removed all unused elements
+
   1.3.0 (11 June 2026)
   - Added How to Play menu with controls and guidance, accessible via TitleScreen
   - Added mode selection system after clicking "Play" on TitleScreen
