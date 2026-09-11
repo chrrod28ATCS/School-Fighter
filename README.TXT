@@ -7,28 +7,7 @@ VERSION and DATE:
   - Removed all unused elements
   - Made small changes to text on TitleScreen to reflect current version
   - Made small edits to text in Credits
-  - Added the game to my CXL Collection website
-
-  1.3.0 (11 June 2026)
-  - Added How to Play menu with controls and guidance, accessible via TitleScreen
-  - Added mode selection system after clicking "Play" on TitleScreen
-    - "Normal" - standard one-match battle
-    - "2 out of 3 falls" - best of 3 challenge; Player must win 2 battles first
-  - Added music from various games for new screens
-  - Rehauled character selection system to include 3 individual characters
-    - Sprinter (fastest)
-    - Fighter (deals 2 HP, gets +400 points instead of just +200)
-    - Jumper (jumps highest)
-  - Created score system, 100 points per attack
-  - Edited match timer to be 30 seconds
-  - Created escape key pause menu
-  - Created new pixel art backgrounds
-    - City skyline
-    - Beach 
-    - Mountains 
-    - Forest
-    - Grassy plain 
-    - Desert 
+  - Added the game to my CXL Collection website 
 
 VERSION HISTORY: 
   1.0.0 (17 February 2026)
@@ -49,6 +28,28 @@ VERSION HISTORY:
 
   1.2.1 (11 May 2026)
   - Added match timer (60 seconds), players draw if time runs out
+
+  1.3.0 (11 June 2026)
+  - YearEnd Project update (CS Fair presentation)
+    - Added How to Play menu with controls and guidance, accessible via TitleScreen
+    - Added mode selection system after clicking "Play" on TitleScreen
+      - "Normal" - standard one-match battle
+      - "2 out of 3 falls" - best of 3 challenge; Player must win 2 battles first
+    - Added music from various games for new screens
+    - Rehauled character selection system to include 3 individual characters
+      - Sprinter (fastest)
+      - Fighter (deals 2 HP, gets +400 points instead of just +200)
+      - Jumper (jumps highest)
+    - Created score system, 100 points per attack
+    - Edited match timer to be 30 seconds
+    - Created escape key pause menu
+    - Created new pixel art backgrounds
+      - City skyline
+      - Beach 
+      - Mountains 
+      - Forest
+      - Grassy plain 
+      - Desert
 
 HOW TO START THIS PROJECT: Download the folder and open it in Greenfoot
 
