@@ -1,12 +1,13 @@
 PROJECT TITLE: School Fighter
 
-PURPOSE OF PROJECT: Applied Comp Sci (2025-2026) Midyear and YearEnd Project
+PURPOSE OF PROJECT: Applied Comp Sci (2025-2026) MidYear and YearEnd Project
 
 VERSION and DATE: 
-  1.3.0.1 (IN DEVELOPMENT) (September 2026)
+  1.3.0.1 (11 September 2026)
   - Removed all unused elements
   - Made small changes to text on TitleScreen to reflect current version
   - Made small edits to text in Credits
+  - Added the game to my CXL Collection website
 
   1.3.0 (11 June 2026)
   - Added How to Play menu with controls and guidance, accessible via TitleScreen
@@ -31,7 +32,7 @@ VERSION and DATE:
 
 VERSION HISTORY: 
   1.0.0 (17 February 2026)
-  - Game on day of 2/17/2026 Midyear Presentation
+  - Game on day of 2/17/2026 MidYear Presentation
 
   1.1.0 (19 February 2026)
   - Added kicking as a new method of attacking
