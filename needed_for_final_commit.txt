@@ -1,0 +1,1 @@
+I am only making this because I need to push the final commit for version 1.3.0.1. The game is fully finished and in its final state. I hope you enjoy School Fighter!
